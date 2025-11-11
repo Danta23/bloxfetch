@@ -1,2 +1,30 @@
-# bloxfetch
-BloxFetch is a lightweight Lua module for Roblox Studio that mimics the functionality of Unix's . It displays simulated system information—like engine version, memory usage, and user identity—in a stylish, console-friendly format. Perfect for integrating into command bar UIs or developer tools to add aesthetic system diagnostics to your game.
+# 📊 BloxFetch
+
+**BloxFetch** is a lightweight Lua module for Roblox Studio that simulates system information display—similar to Unix's `neofetch`. It’s designed for developers who want to add aesthetic diagnostics to their games, command bar UIs, or dev dashboards.
+
+---
+
+## 🎯 Purpose
+
+BloxFetch mimics the look and feel of `neofetch`, providing simulated system info like user identity, engine version, and memory usage. It’s perfect for Roblox developers who want to add flair to their debugging tools or in-game terminals.
+
+---
+
+## ✨ Features
+
+- 🧠 **Simulated System Info**: Displays user name, engine version, memory stats, and more  
+- 🎨 **Neofetch-style Output**: Clean, console-friendly formatting  
+- 🔌 **Easy Integration**: Plug into any command bar or GUI  
+- 🧱 **Modular Design**: Lightweight and customizable  
+- 🚀 **Compatible with CommandBar.lua**: Seamless pairing with advanced command bar UIs
+
+---
+
+## 📦 Installation
+
+1. Clone or download this repository  
+2. Place the `BloxFetch.lua` module inside `ReplicatedStorage` in your Roblox project  
+3. Require the module from any LocalScript or command bar handler:
+
+```lua
+local BloxFetch = require(game:GetService("ReplicatedStorage"):WaitForChild("BloxFetch"))
